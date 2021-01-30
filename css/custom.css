@@ -1,13 +1,9 @@
-/*
- *  Draco HTML Template by @flamekaizar
- *  License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display SC", serif;
+  font-family: 'Superhelioregular';
   color: #333333; }
 
-a, p, li {
-  font-family: "Lato", Arial, sans-serif;
+a, p, li ,i{
+  font-family: 'Superhelioregular';
   color: #4e4e4e;
   font-size: 1em;
   line-height: 1.75em; }
@@ -23,7 +19,7 @@ a:hover {
 
 .container {
   margin: auto;
-  max-width: 662px;
+  max-width: 700px;
   padding: 0 20px; }
 
 @media only screen and (max-width: 767px) {
@@ -43,7 +39,7 @@ a:hover {
   -o-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite; }
 
-@-webkit-keyframes blink {
+/* @-webkit-keyframes blink {
   0% {
     opacity: 1; }
   50% {
@@ -70,9 +66,9 @@ a:hover {
   50% {
     opacity: 0; }
   100% {
-    opacity: 1; } }
+    opacity: 1; } } */
 .main-nav {
-  background: #aec8e8;
+  background: #bcd5f3;
   padding-top: 23px;
   font-size: 16px;
 }
