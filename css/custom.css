@@ -1,9 +1,9 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family:'Georgia';
+  font-family: 'Consolas';
   color: #333333; }
 
 a, p, li ,i{
-  font-family:'Georgia';
+  font-family: 'Consolas';
   color: #4e4e4e;
   font-size: 1em;
   line-height: 1.75em; }
