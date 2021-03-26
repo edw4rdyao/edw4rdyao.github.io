@@ -1,128 +1,151 @@
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Superhelioregular';
-  color: #333333; }
+/* 自定义字体 */
+@font-face {
+	font-family: Pix;
+  src: url("../fonts/Pix\ Body.TTF");
+}
 
-a, p, li ,i{
-  font-family: 'Superhelioregular';
-  color: #4e4e4e;
-  font-size: 1em;
-  line-height: 1.75em; }
+h1 {
+	font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Pix';
+	color: #333333;
+	font-weight: 600;
+}
+
+a, p, li ,i {
+	font-family: 'Pix';
+	color: #303030;
+	line-height: 1.75em;
+}
 
 a:hover {
-  text-decoration: none !important;
-  color: #333333 !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+	text-decoration: none !important;
+	color: #333333 !important;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
 
-.container {
-  margin: auto;
-  max-width: 700px;
-  padding: 0 20px; }
+.section .container {
+	margin: auto;
+	max-width: 720px;
+	padding: 0 20px;
+}
 
 @media only screen and (max-width: 767px) {
-  .intro img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
+	.intro img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-  footer {
-    text-align: center; } }
-.typed-cursor {
-  opacity: 1;
-  font-weight: 100;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  -ms-animation: blink 0.7s infinite;
-  -o-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite; }
-.main-nav {
-  background: #bcd5f3;
-  padding-top: 23px;
-  font-size: 16px;
+	footer {
+		text-align: center;
+	}
 }
-  .main-nav nav ul li a {
-    color: #202020; }
-  .main-nav nav ul li.active a {
-    color: #000000;
-  }
 
 .section.second {
-  margin-bottom: 90px; }
+	margin-bottom: 90px;
+}
+
 .section .container {
-  position: relative; }
-  .section .container:after {
-    position: absolute;
-    content: url(../img/separator.png);
-    left: 20px; }
-  .section .container h1 {
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    position: relative; }
+	position: relative;
+}
 
+.section .container:after {
+	position: absolute;
+	content: url(../img/separator.png);
+	left: 20px;
+}
+
+.section .container h1 {
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+
+/* ========全屏背景图片========== */
+#web_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    zoom: 1;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    background-image: url(../img/bg.gif);
+}
+
+
+/* ======开头的自我介绍======= */
 .intro {
-  padding: 95px 0px 70px 0px;
-  overflow-x: hidden; }
-  .intro img {
-    width: 81px;
-    height: 81px;
-    border-radius: 99px; }
-  .intro .wrap {
-    margin: 30px 0px; }
-  .intro h1:before {
-    position: absolute;
-    left: -220px;
-    top: -150px;
-    font-size: 270px;
-    z-index: -1;
-    color: #f4f4f4; }
-  .intro h1 span {
-    font-size: 47px; }
+	padding: 95px 0px 70px 0px;
+	overflow-x: hidden;
+}
+/* 头像 */
+.intro img {
+	width: 81px;
+	height: 81px;
+	border-radius: 99px;
+}
+.intro .wrap {
+	margin: 30px 0px;
+}
 
+
+/* =========教育经历========== */
 .work .work-list {
-  margin-left: 0px; }
-  .work .work-list li {
-    list-style: none;
-    font-size: 0.9375em;
-    color: #8c8c8c; }
-    .work .work-list li a {
-      padding-bottom: 5px;
-      font-size: 1.1875em;
-      font-weight: 700;
-      text-decoration: none;
-      border-bottom: 1px solid #b3b3b3; }
-      .work .work-list li a:hover {
-        border-bottom: 1px solid #333333; }
+	margin-left: 0px;
+}
+/* 时间线和介绍 */
+.work .work-list li {
+	list-style: none;
+	font-size: 1.1em;
+	color: #3b3b3b;
+}
+/* 校名 */
+.work .work-list li a {
+	padding-bottom: 5px;
+	font-size: 1.1875em;
+	font-weight: 700;
+	text-decoration: none;
+	border-bottom: 1px solid #b3b3b3;
+}
+/* 链接悬浮效果 */
+.work .work-list li a:hover {
+	border-bottom: 1px solid #333333;
+}
 
+/* =========成就与奖项============ */
 .award .award-list {
-  margin-left: 0px; }
-  .award .award-list li:first-child {
-    font-size: 0.9375em;
-    color: #8c8c8c; }
+	margin-left: 0px;
+}
+.award .award-list li{
+  list-style: none;
+	font-size: 1.1em;
+	color: #424242;
+}
 
+
+/* ======课程 项目 联系方式======== */
 .skills .skill-list {
-  margin-left: 0px; }
-  .skills .skill-list li:first-child {
-    font-size: 0.9375em;
-    color: #8c8c8c; }
+	margin-left: 0px;
+}
 
-.quote {
-  background: url(../img/bg.jpg);
-  padding: 20px 0px;
-  margin-top: 120px; }
-  .quote h1 {
-    margin: 100px 0px;
-    padding: 40px 20px;
-    border: 5px solid #fff;
-    color: #fff; }
-
-footer {
-  padding: 50px 0px 0px 0px; }
-  footer .social li {
-    display: inline;
-    margin-left: 20px; }
-    footer .social li a {
-      font-size: 1.25em;
-      color: #999999; }
+.skills .skill-list li{
+  list-style: none;
+	font-size: 1.1em;
+	color: #000000;
+}
