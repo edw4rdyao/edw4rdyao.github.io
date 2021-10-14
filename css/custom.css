@@ -10,13 +10,13 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Pix';
-	color: #333333;
+	color: #2a2a2a;
 	font-weight: 600;
 }
 
 a, p, li ,i {
 	font-family: 'Pix';
-	color: #303030;
+	color: #2a2a2a;
 	line-height: 1.75em;
 }
 
@@ -147,5 +147,5 @@ a:hover {
 .skills .skill-list li{
   list-style: none;
 	font-size: 1.1em;
-	color: #000000;
+	color: #242323;
 }
