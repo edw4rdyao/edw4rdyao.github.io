@@ -1,7 +1,7 @@
-/* 自定义字体 */
+/* font */
 @font-face {
-	font-family: Pix;
-  src: url("../fonts/Pix\ Body.TTF");
+	font-family: Fira;
+  	src: url("../fonts/FiraCode.ttf");
 }
 
 h1 {
@@ -9,20 +9,25 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Pix';
-	color: #2a2a2a;
+	font-family: 'Fira';
 	font-weight: 600;
 }
 
-a, p, li ,i {
-	font-family: 'Pix';
-	color: #2a2a2a;
+a,i {
+	font-family: 'Fira';
+	color: #424141;
+	line-height: 1.75em;
+}
+
+p, li{
+	font-family: 'Fira';
+	color: #333b47;
 	line-height: 1.75em;
 }
 
 a:hover {
 	text-decoration: none !important;
-	color: #333333 !important;
+	color: #030303 !important;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -56,12 +61,6 @@ a:hover {
 	position: relative;
 }
 
-.section .container:after {
-	position: absolute;
-	content: url(../img/separator.png);
-	left: 20px;
-}
-
 .section .container h1 {
 	text-transform: uppercase;
 	margin-bottom: 30px;
@@ -69,7 +68,7 @@ a:hover {
 }
 
 
-/* ========全屏背景图片========== */
+/* background */
 #web_bg {
     position: fixed;
     top: 0;
@@ -77,24 +76,21 @@ a:hover {
     width: 100%;
     height: 100%;
     min-width: 1000px;
-    z-index: -10;
-    zoom: 1;
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
-    background-position: center 0;
-    background-image: url(../img/bg.gif);
+    /* background-image: url(../img/bg.gif); */
+    background-image: url(../img/bg.jpg);
 }
 
 
-/* ======开头的自我介绍======= */
+/* introduce */
 .intro {
 	padding: 95px 0px 70px 0px;
 	overflow-x: hidden;
 }
-/* 头像 */
 .intro img {
 	width: 81px;
 	height: 81px;
@@ -105,47 +101,76 @@ a:hover {
 }
 
 
-/* =========教育经历========== */
+/* edu */
 .work .work-list {
 	margin-left: 0px;
 }
-/* 时间线和介绍 */
+/* time and detial */
 .work .work-list li {
 	list-style: none;
-	font-size: 1.1em;
-	color: #3b3b3b;
+	font-size: 1.0em;
+	color: #333b47;
 }
-/* 校名 */
+/* name*/
 .work .work-list li a {
-	padding-bottom: 5px;
+	padding-bottom: 3px;
 	font-size: 1.1875em;
-	font-weight: 700;
 	text-decoration: none;
-	border-bottom: 1px solid #b3b3b3;
-}
-/* 链接悬浮效果 */
-.work .work-list li a:hover {
-	border-bottom: 1px solid #333333;
+	border-bottom: 3px solid #383838;
 }
 
-/* =========成就与奖项============ */
+/* awards */
 .award .award-list {
 	margin-left: 0px;
 }
-.award .award-list li{
-  list-style: none;
-	font-size: 1.1em;
-	color: #424242;
+
+.award .award-list .time{
+  	font-size: 0.9em;
 }
 
+.award .award-list li{
+  	list-style: none;
+	font-size: 1.0em;
+	color: #333b47;
+}
 
-/* ======课程 项目 联系方式======== */
-.skills .skill-list {
+/* blogs */
+.blogs .blog-tit a{
+	
+	font-size: 1em;
+	text-decoration: none;
+	border-bottom: 3px solid #383838;
+}
+
+/* project */
+.proj .proj-list {
 	margin-left: 0px;
 }
 
-.skills .skill-list li{
-  list-style: none;
+.proj .proj-list li{
+	list-style: none;
 	font-size: 1.1em;
 	color: #242323;
+}
+
+/* contact */
+.cont .cont-list {
+	margin-left: 0px;
+}
+
+.cont .cont-list p{
+	list-style: none;
+	font-size: 1.1em;
+	color: #333b47;
+}
+
+.cont .cont-list li{
+	list-style: none;
+	font-size: 0.9em;
+	color: #333b47;
+}
+
+.cont .cont-list li a{
+	text-decoration: none;
+	border-bottom: 3px solid #383838;
 }
