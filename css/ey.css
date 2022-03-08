@@ -97,6 +97,7 @@ hr{
 	min-width: 750px;
 	margin: auto;
 	height: 50px;
+	padding-left: 30px;
 }
 
 .menu .menu_list>ul>li{
