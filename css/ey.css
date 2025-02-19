@@ -19,8 +19,8 @@
 	--font-c:			#313944;
 	--scrollbar-bgc:	#d6d6d6;
 	--scrollbar-c:		#888888;
-	--header-bgc:		#54a17a6e;
-	/* --header-bgc:		#547ca16e; */
+	/* --header-bgc:		#54a17a6e; */
+	--header-bgc:		#a88874ae;
 	--spanline-bgc:		#30353d6c;	
 	--quote-bgc:		#cccccc94;
 	--quote-border-c: 	#536377;
@@ -99,7 +99,7 @@ a{
 	text-decoration: none;
 }
 p{
-	text-indent: 2em;
+	/* text-indent: 2em; */
 }
 
 hr{
@@ -129,7 +129,7 @@ hr{
 }
 
 .menu .menu_list>ul>li{
-	width: 17%;
+	width: 15%;
 	margin: 0 auto;
 	display: block;
 	float: right;
